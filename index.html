@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Never stop learning</title>
+    <!-- Primary Meta Tags -->
+    <title>Flip Stopwatch for students</title>
+    <meta name="title" content="Flip Stopwatch for students" />
+    <meta
+      name="description"
+      content="i was made this website for my personal study requirement but i want to share some students like me."
+    />
+
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="" />
+    <meta property="og:title" content="Flip Stopwatch for students" />
+    <meta
+      property="og:description"
+      content="i was made this website for my personal study requirement but i want to share some students like me."
+    />
+    <meta
+      property="og:image"
+      content="https://i.postimg.cc/KjRM6RZM/flip.png"
+    />
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="" />
+    <meta property="twitter:title" content="Flip Stopwatch for students" />
+    <meta
+      property="twitter:description"
+      content="i was made this website for my personal study requirement but i want to share some students like me."
+    />
+    <meta
+      property="twitter:image"
+      content="https://i.postimg.cc/KjRM6RZM/flip.png"
+    />
+    <link
+      href="https://unpkg.com/@pqina/flip/dist/flip.min.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./styles.css" />
+  </head>
+  <body>
+    <section class="container">
+      <p class="docs">DOCS</p>
+      <div class="menu" id="menu">
+        <ul>
+          <li>Press "s" to start the stopwatch.</li>
+          <li>Press "p" to pause the stopwatch.</li>
+          <li>Press "e" to reset the stopwatch.</li>
+        </ul>
+      </div>
+      <div class="tick" data-value="0" data-did-init="handleTickInit">
+        <div data-layout="horizontal fit" data-value-mapping="indexes">
+          <span class="tick-group">
+            <span data-repeat="true" data-transform="pad(00) -> split">
+              <span data-view="flip"></span>
+            </span>
+            <span class="tick-text-inline">h</span>
+          </span>
+
+          <span class="tick-group">
+            <span data-view="flip"></span>
+            <span class="tick-text-inline">m</span>
+          </span>
+
+          <span class="tick-group">
+            <span data-repeat="true" data-transform="pad(00) -> split">
+              <span data-view="flip"></span>
+            </span>
+            <span class="tick-text-inline">s</span>
+          </span>
+        </div>
+      </div>
+    </section>
+    <script src="https://unpkg.com/@pqina/flip/dist/flip.min.js"></script>
+    <script src="./app.js"></script>
+  </body>
+</html>
